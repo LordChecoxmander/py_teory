@@ -21,6 +21,7 @@ def imprime_añade(x,pos_name,pos_defense,pos_attack, pos_generation):
     if ("1" in x[pos_generation]) and (x[pos_attack] == x[pos_defense]):
         print(x[pos_name])
         nom_pok.append(x[pos_name])
+        return x[pos_name]
 
 a = list(map(lambda x :imprime_añade(x,pos_name,pos_defense,pos_attack, pos_generation), datos))
 
@@ -32,7 +33,7 @@ a = list(map(lambda x :imprime_añade(x,pos_name,pos_defense,pos_attack, pos_gen
 #a = list(map(lambda x: nom_pok.append(x[pos_name]) if (x[pos_attack] == x[pos_defense]) else None, datos))
 
 #a = list(filter(lambda x: (x[pos_attack] == x[pos_defense]), datos))
-#print(a)
+print(a)
 #print(nom_pok)
 
 #cierre del archivo
